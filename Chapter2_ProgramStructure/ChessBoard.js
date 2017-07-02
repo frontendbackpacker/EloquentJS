@@ -1,25 +1,22 @@
 function ChessBoard(size){
-var i;
-var j;
-var t="";
+    var i,
+        j,
+        t="";
 
-    for(i=0;i<size;i++){
-    
+    for(i=0;i<size;i++){    
         for(j=0;j<size;j++){
-
             if(i%2==0){
-
                 if(j%2==0)
-                t+=" ";
+                    t+=" ";
                 else
-                t+="#";              
-            }           
+                    t+="#";              
+            }          
+
             if(i%2==1){
-    
                 if(j%2==1)
-                t+=" ";
+                    t+=" ";
                 else
-                t+="#";
+                    t+="#";
             }
         }
         
@@ -28,4 +25,5 @@ var t="";
         t="";
     }
 }
+
 ChessBoard(8);

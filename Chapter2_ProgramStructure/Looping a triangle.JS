@@ -1,14 +1,15 @@
-function f1()
-{	
+function loop(){	
   	var t="";
-    for(var i=1;i<8;i++)
-    {
-        for(var j=1;j<=i;j++)
-        {
+      
+    for(var i=1;i<8;i++){
+        for(var j=1;j<=i;j++){
             t+="*";
         }
-      	console.log(t);
-      	t="";
+      	
+        console.log(t);
+      	    
+        t="";
     }
 }
-f1();
+
+loop();
